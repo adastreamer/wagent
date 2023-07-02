@@ -1,7 +1,7 @@
 # update submodule
 git submodule update --init
 # set tag for boost submodules
-DEFAULT_TAG="boost-1.79.0"
+DEFAULT_TAG="boost-1.80.0"
 # update
 git config -f .gitmodules --get-regexp '^submodule\..*\.url$' |
     while read -r KEY MODULE_PATH; do
