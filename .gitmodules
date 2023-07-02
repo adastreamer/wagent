@@ -1,57 +1,76 @@
 [submodule "src/vendor/ws"]
 	path = src/vendor/ws
 	url = https://github.com/zaphoyd/websocketpp
+	ignore = dirty
 [submodule "src/vendor/boost"]
 	path = src/vendor/boost
 	url = https://github.com/boostorg/config
+	ignore = dirty
 [submodule "src/vendor/boost-asio"]
 	path = src/vendor/boost-asio
 	url = https://github.com/boostorg/asio
+	ignore = dirty
 [submodule "src/vendor/boost-throw_exception"]
 	path = src/vendor/boost-throw_exception
 	url = https://github.com/boostorg/throw_exception
+	ignore = dirty
 [submodule "src/vendor/boost-assert"]
 	path = src/vendor/boost-assert
 	url = https://github.com/boostorg/assert
+	ignore = dirty
 [submodule "src/vendor/boost-align"]
 	path = src/vendor/boost-align
 	url = https://github.com/boostorg/align
+	ignore = dirty
 [submodule "src/vendor/boost-system"]
 	path = src/vendor/boost-system
 	url = https://github.com/boostorg/system
+	ignore = dirty
 [submodule "src/vendor/boost-date_time"]
 	path = src/vendor/boost-date_time
 	url = https://github.com/boostorg/date_time
+	ignore = dirty
 [submodule "src/vendor/boost-smart_ptr"]
 	path = src/vendor/boost-smart_ptr
 	url = https://github.com/boostorg/smart_ptr
+	ignore = dirty
 [submodule "src/vendor/boost-core"]
 	path = src/vendor/boost-core
 	url = https://github.com/boostorg/core
+	ignore = dirty
 [submodule "src/vendor/boost-utility"]
 	path = src/vendor/boost-utility
 	url = https://github.com/boostorg/utility
+	ignore = dirty
 [submodule "src/vendor/boost-static_assert"]
 	path = src/vendor/boost-static_assert
 	url = https://github.com/boostorg/static_assert
+	ignore = dirty
 [submodule "src/vendor/boost-type_traits"]
 	path = src/vendor/boost-type_traits
 	url = https://github.com/boostorg/type_traits
+	ignore = dirty
 [submodule "src/vendor/boost-numeric_conversion"]
 	path = src/vendor/boost-numeric_conversion
 	url = https://github.com/boostorg/numeric_conversion
+	ignore = dirty
 [submodule "src/vendor/boost-mpl"]
 	path = src/vendor/boost-mpl
 	url = https://github.com/boostorg/mpl
+	ignore = dirty
 [submodule "src/vendor/boost-preprocessor"]
 	path = src/vendor/boost-preprocessor
 	url = https://github.com/boostorg/preprocessor
+	ignore = dirty
 [submodule "src/vendor/boost-bind"]
 	path = src/vendor/boost-bind
 	url = https://github.com/boostorg/bind
+	ignore = dirty
 [submodule "src/vendor/boost-regex"]
 	path = src/vendor/boost-regex
 	url = https://github.com/boostorg/regex
+	ignore = dirty
 [submodule "src/vendor/boost-predef"]
 	path = src/vendor/boost-predef
 	url = https://github.com/boostorg/predef
+	ignore = dirty
