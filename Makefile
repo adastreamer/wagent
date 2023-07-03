@@ -8,7 +8,7 @@ VENDORS_DIRS := $(shell ls ${VENDOR_DIR} | xargs printf -- " -I${VENDOR_DIR}/%s"
 VENDORS_INCLUDE_DIRS := $(shell ls ${VENDOR_DIR} | xargs printf -- " -I${VENDOR_DIR}/%s/include")
 
 CC=g++
-CFLAGS=-std=c++17 -Wall -O3 -I$(SRC_DIR) -I$(VENDOR_DIR)$(VENDORS_DIRS)$(VENDORS_INCLUDE_DIRS) -static -pthread
+CFLAGS=-std=c++17 -Wall -O3 -I$(SRC_DIR) -I$(VENDOR_DIR)$(VENDORS_DIRS)$(VENDORS_INCLUDE_DIRS)
 
 EXEC_PREFIX=wagent_
 
@@ -25,13 +25,13 @@ all: mkdirs $(LIB_TARGETS) $(CMD_TARGETS)
 	$(MAKE) clean
 
 $(BIN_DIR)/$(EXEC_PREFIX)%: $(CMD_DIR)/%.cpp
-	$(CC) $(CFLAGS) -o $@ $(BINLIB_DIR)/*.o $(BIN_DIR)/$*.o
+	$(CC) $(CFLAGS) $(CFLAGS_EXTRA) -o $@ $(BINLIB_DIR)/*.o $(BIN_DIR)/$*.o
 
 $(BIN_DIR)/%.o: $(CMD_DIR)/%.cpp
-	$(CC) $(CFLAGS) -c $^ -o $@
+	$(CC) $(CFLAGS) $(CFLAGS_EXTRA) -c $^ -o $@
 
 $(BINLIB_DIR)/%.o: $(LIB_DIR)/%.cpp
-	$(CC) $(CFLAGS) -c $^ -o $@
+	$(CC) $(CFLAGS) $(CFLAGS_EXTRA) -c $^ -o $@
 
 mkdirs:
 	mkdir -p $(BIN_DIR) $(BINLIB_DIR)
@@ -45,6 +45,6 @@ clear:
 	$(MAKE) clean
 	rm -rf $(CMD_EXECS)
 
-recompile:
+rebuild:
 	$(MAKE) clear
 	$(MAKE) -j
