@@ -1,24 +1,9 @@
 # Build
 
 ```
-make -j
+git clone https://github.com/adastreamer/wagent.git
 
-#
-# to recompile: clean and build
-#
-make recompile
-```
+git submodule update --init --recursive
 
-# Environment
-
-```
-docker run -it -v $PWD:/wagent ubuntu bash
-```
-
-
-# Docker build/run
-
-```
 docker build . -t wagent
-
 ```
