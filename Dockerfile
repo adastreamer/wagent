@@ -1,4 +1,4 @@
-FROM gcc:11.4.0
-COPY . /wagent
+FROM gcc:13.1
 WORKDIR /wagent
+COPY . /wagent
 RUN make recompile

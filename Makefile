@@ -8,7 +8,7 @@ VENDORS_DIRS := $(shell ls ${VENDOR_DIR} | xargs printf -- " -I${VENDOR_DIR}/%s"
 VENDORS_INCLUDE_DIRS := $(shell ls ${VENDOR_DIR} | xargs printf -- " -I${VENDOR_DIR}/%s/include")
 
 CC=g++
-CFLAGS=-std=c++11 -Wall -O3 -I$(SRC_DIR) -I$(VENDOR_DIR)$(VENDORS_DIRS)$(VENDORS_INCLUDE_DIRS) -static
+CFLAGS=-std=c++17 -Wall -O3 -I$(SRC_DIR) -I$(VENDOR_DIR)$(VENDORS_DIRS)$(VENDORS_INCLUDE_DIRS) -static -pthread
 
 EXEC_PREFIX=wagent_
 
