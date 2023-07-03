@@ -12,7 +12,7 @@ git submodule update --init --recursive
 ```
 
 #
-# for static linked binaries
+# for static linked binaries (default)
 #
 docker build . --tag wagent --target static
 
